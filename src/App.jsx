@@ -1,4 +1,4 @@
-import SignIn from './Components/SignIn'
+import SignIn from './Components/SignIn';
 import './App.css';
 import { AuthProvider } from './Components/Context/AuthContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

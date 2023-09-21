@@ -1,5 +1,5 @@
 {
-  "name": "imagegallery-HNGx",
+  "name": "imagegalleryHNGx",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dnd-kit/core": "^6.0.8",
+    "@dnd-kit/sortable": "^7.0.2",
+    "@dnd-kit/utilities": "^3.2.1",
+    "@hookform/resolvers": "^3.3.1",
     "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "firebase": "^10.4.0",
     "pexels": "^1.4.0",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-icons": "^4.11.0",
