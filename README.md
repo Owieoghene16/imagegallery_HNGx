@@ -1,6 +1,6 @@
 # Documentation for Kindness Okpugie Image gallery
 
-## Kindness_Movie_App
+## Kindness_Image-Gallery
 
 - This is a web application that allows user to view images on a grid, search image by their tag name and swap it using drag and drop feature.
 
@@ -14,5 +14,5 @@
 
 ### Hosted Link
 
-- <https:google.com/>
+- <https://kindness-okpugie-imagegallery.vercel.app//>
 
