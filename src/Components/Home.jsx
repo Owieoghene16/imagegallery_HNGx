@@ -36,7 +36,7 @@ const Home = () => {
     {loading ? 
       <div className='loaded-center'> 
       <ClipLoader
-        color={'steelblue'}
+        color={'white'}
         loading={loading}
         size={50}
         aria-label="Loading Spinner"
