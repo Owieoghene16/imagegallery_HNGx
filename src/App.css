@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: steelblue;
+}
+/* Navbar section */
+
+nav{
+	display: flex;
+  position: sticky;
+  top: 0;
+	justify-content: space-between;
+  align-items: center;
+	background-color: purple;
+  width: 100%;
+  height: 10vh;
+  z-index: 100;
+}
+
+.brand {
+  margin-left: 100px;
+}
+
+.brand h1 {
+	font-size: 35px;
+  color: lightblue;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.search {
+  width: 50%;
+  margin: 80px 20px ;
+}
+
+.search input[type="text"] {
+  width: 90%;
+  border: none;
+  outline: none;
+  background: white;
+  color: #555;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 8px;
+}
+.search input[type="text"]::placeholder {
+  color: lightblue;
+}
+
+.search-btn {
+  border: none;
+  background-color: steelblue;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  cursor: pointer;
+}
+
+/* Home Section */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.card {
+	background-color: steelblue;
+	display: flex;
+	flex-direction: column;
+	width: 22%;
+	margin-top: 5rem;
+  cursor: move;
+}
+
+.img-container {
+	width: 100%;
+  height: 25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.topleft {
+  background-color: #1c8abd;
+  padding: 5px;
+  color: white;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.img {
+	height: 25rem;
+  border-radius: 6px;
+  width: 100%;
+  object-fit: fill;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Authpage section */
+
+.header header {
+  font-family: var(--fontfamily);
+  position: relative;
+  padding: 20px;
+  font-size: 20px;
+  padding-left: 150px;
+  background-color: silver;
+  color: #777;
+  font-weight: bold;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Form styles */
+.signup-form {
+  width: 400px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  background: purple;
+  margin: 8% auto;
+  text-align: center;
+}
+
+.signup-form h1 {
+  color: steelblue;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width:   95%;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.signup-form button {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+.signup-btn {
+  background-color: steelblue;
+}
+
+.twitter-btn {
+  background-color: steelblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.or {
+  background-color: #fff;
+  margin: -19px auto 10px;
+  width: 30px;
+}
+
+.errmsg {
+  color: red;
+  font-weight: 700;
+}
+
+.loaded-center {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout {
+  border: none;
+  background-color: steelblue;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+footer {
+  margin-top: 50px;
+  height: 80px;
+  width: 100%;
+  background: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+footer p span {
+  color: yellow;
+}
+
+
+@media screen and (max-width: 500px) {
+  
+.logout {
+  display: none
+}
+  
+  header nav {
+    width: 35%;
+  }
+  .search {
+    width: 65%;
+  }
+  .card {
+    width: 42%;
+  }
+  .img {
+    object-fit: fill;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  nav {
+    justify-content: space-around;
+  }
+  .brand {
+    margin-left: 20px;
+  }
+  .brand h1 {
+    font-size: 30px;
+  }
+  .search input[type="text"] {
+    height: 45px;
+    width: 250px;
+    font-size: 15px;
+  }
+  .search-btn {
+    padding: 12px;
+  }
+  .logout {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search input[type="text"] {
+    height: 40px;
+    width: 250px;
+    font-size: 15px;
+  }
+  .search-btn {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+  .logout {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .search input[type="text"] {
+    height: 30px;
+    width: 150px;
+    font-size: 11px;
+  }
+  .search-btn {
+    padding: 4px 4px;
+    font-size: 12px;
+  }
+  .logout {
+    padding: 4px 4px;
+    font-size: 12px;
+  }
+  .brand h1 {
+    font-size: 20px;
+  }
+  .signup-form {
+    width: fit-content;
+  }
+}
