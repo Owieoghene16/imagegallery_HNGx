@@ -45,15 +45,17 @@ const Home = () => {
   const [searchImages, setSearchImages] = useState('');
   const [loading, setLoading] = useState(true);
 
+  const options = {
+    method: 'GET',
+    url: 'https://api.themoviedb.org/3/movie/popular?api_key=b991de6ee9dc8e55c2bcc7a20cc0a756',  
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiOTkxZGU2ZWU5ZGM4ZTU1YzJiY2M3YTIwY2MwYTc1NiIsInN1YiI6IjY1MDA1YTFiZDdkY2QyMDBhY2IwNDVhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Xk2gatk5wsYEPGcosnmfqzG0Pp9UbOCdEUIr2zOG2TU'
+    }
+  };
   const getPhotos = async () => {
     try {
-      const response =  await axios.get(`https://api.themoviedb.org/3/movie/top_rated`, {
-        params: {
-          api_key: 'b991de6ee9dc8e55c2bcc7a20cc0a756',
-          language: 'en-US',
-          page: 1
-        },
-      });
+      const response =  await axios.request(options);
       setImages(response.data.results.slice(0, 15))
       setLoading(false)
     } catch (err) {
